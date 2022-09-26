@@ -385,7 +385,7 @@ const App = () => {
 
 However, when defining the root component of the application this is not a particularly wise thing to do, and it makes the code look a bit ugly.
 
-Because the root element is stipulated, we have "extra" div-elements in the DOM-tree. This can be avoided by using [fragments](https://reactjs.org/docs/fragments.html#short-syntax), i.e. by wrapping the elements to be returned by the component with an empty element:
+Because the root element is stipulated, we have "extra" div-elements in the DOM-tree. This can be avoided by using [fragments].(https://reactjs.org/docs/fragments.html#short-syntax), i.e. by wrapping the elements to be returned by the component with an empty element:
 
 ```js
 const App = () => {
