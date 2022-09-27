@@ -7,7 +7,7 @@ lang: en
 
 <div class="content">
 
-We will now start getting familiar with probably the most important topic of this course, namely the [React](https://reactjs.org/)-library. Let's start off with making a simple React application as well as getting to know the core concepts of React.
+We will now start getting familiar with probably the most important topic of this course, namely the [React](https://reactjs.org/)-library. Let's start off by making a simple React application as well as getting to know the core concepts of React.
 
 The easiest way to get started by far is by using a tool called [create-react-app](https://github.com/facebook/create-react-app). It is possible (but not necessary) to install <i>create-react-app</i> on your machine if the <i>npm</i> tool that was installed along with Node has a version number of at least <i>5.3</i>.
 
@@ -24,9 +24,9 @@ The application is run as follows
 npm start
 ```
 
-By default, the application runs in localhost port 3000 with the address <http://localhost:3000>
+By default, the application runs on localhost port 3000 with the address <http://localhost:3000>
 
-Your default browser should launch automatically. Open the browser console **immediately**. Also open a text editor so that you can view the code as well as the web-page at the same time on the screen:
+Your default browser should launch automatically. Open the browser console **immediately**. Also open a text editor so that you can view the code as well as the webpage at the same time on the screen:
 
 ![](../../images/1/1e.png)
 
@@ -59,7 +59,7 @@ If you end up with the following error:
 
 ![](../../images/1/r18-error.png)
 
-Then, for some reason you are using a React version older than the current version 18.
+Then, for some reason, you are using a React version older than the current version 18.
 
 The fix is to change <i>index.js</i> as follows
 
@@ -116,7 +116,7 @@ const App = ...
 
 There are a few ways to define functions in JavaScript. Here we will use [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), which are described in a newer version of JavaScript known as [ECMAScript 6](http://es6-features.org/#Constants), also called ES6.
 
-Because the function consists of only a single expression we have used a shorthand, which represents this piece of code:
+Because the function consists of only a single expression, we have used a shorthand, which represents this piece of code:
 
 ```js
 const App = () => {
@@ -164,7 +164,7 @@ const App = () => {
 }
 ```
 
-Any JavaScript code within the curly braces is evaluated and the result of this evaluation is embedded into the defined place in the HTML produced by the component.
+Any JavaScript code within the curly braces is evaluated, and the result of this evaluation is embedded into the defined place in the HTML produced by the component.
 
 ### JSX
 
@@ -192,9 +192,9 @@ const App = () => {
 
 The compiling is handled by [Babel](https://babeljs.io/repl/). Projects created with *create-react-app* are configured to compile automatically. We will learn more about this topic in [part 7](/en/part7) of this course.
 
-It is also possible to write React as "pure JavaScript" without using JSX. Although, nobody with a sound mind would actually do so.
+It is also possible to write React as "pure JavaScript" without using JSX. Although nobody with a sound mind would actually do so.
 
-In practice, JSX is much like HTML with the distinction that with JSX you can easily embed dynamic content by writing appropriate JavaScript within curly braces. The idea of JSX is quite similar to many templating languages, such as Thymeleaf used along with Java Spring, which are used on servers.
+In practice, JSX is much like HTML with the distinction that with JSX you can easily embed dynamic content by writing appropriate JavaScript within curly braces. The idea of JSX is quite similar to many templating languages, such as Thymeleaf, used along with Java Spring, which are used on servers.
 
 JSX is "[XML](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction)-like", which means that every tag needs to be closed. For example, a newline is an empty element, which in HTML can be written as follows:
 
@@ -250,15 +250,15 @@ const App = () => {
 }
 ```
 
-Writing components with React is easy, and by combining components, even a more complex application can be kept fairly maintainable. Indeed, a core philosophy of React is composing applications from many specialized reusable components.
+Writing components with React is easy, and by combining components, even a more complex application can be kept fairly maintainable. Indeed, a core philosophy of React is composing applications from many specialised reusable components.
 
 Another strong convention is the idea of a <i>root component</i> called <i>App</i> at the top of the component tree of the application. Nevertheless, as we will learn in [part 6](/en/part6), there are situations where the component <i>App</i> is not exactly the root, but is wrapped within an appropriate utility component.
 
 ### props: passing data to components
 
-It is possible to pass data to components using so called [props](https://reactjs.org/docs/components-and-props.html).
+It is possible to pass data to components using so-called [props](https://reactjs.org/docs/components-and-props.html).
 
-Let's modify the component <i>Hello</i> as follows
+Let's modify the component <i>Hello</i> as follows:
 
 ```js
 const Hello = (props) => { // highlight-line
@@ -286,7 +286,7 @@ const App = () => {
 }
 ```
 
-There can be an arbitrary number of props and their values can be "hard coded" strings or results of JavaScript expressions. If the value of the prop is achieved using JavaScript it must be wrapped with curly braces.
+There can be an arbitrary number of props, and their values can be "hard-coded" strings or the results of JavaScriptexpressions. If the value of the prop is achieved using JavaScript, it must be wrapped with curly braces.
 
 Let's modify the code so that the component <i>Hello</i> uses two props:
 
@@ -327,7 +327,7 @@ React has been configured to generate quite clear error messages. Despite this, 
 
 It is good to remember that in React it is possible and worthwhile to write <em>console.log()</em> commands (which print to the console) within your code.
 
-Also keep in mind that **React component names must be capitalized**. If you try defining a component as follows
+Also keep in mind that **React component names must be capitalized**. If you try defining a component as follows:
 
 ```js
 const footer = () => {
@@ -353,7 +353,7 @@ const App = () => {
 }
 ```
 
-the page is not going to display the content defined within the Footer component, and instead React only creates an empty [footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer) element, i.e. the built-in HTML element instead of the custom React element of the same name. If you change the first letter of the component name to a capital letter, then React creates a <i>div</i>-element defined in the Footer component, which is rendered on the page.
+The page is not going to display the content defined within the Footer component, and instead React only creates an empty [footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer) element, i.e. the built-in HTML element instead of the custom React element of the same name. If you change the first letter of the component name to a capital letter, then React creates a <i>div</i>-element defined in the Footer component, which is rendered on the page.
 
 Note that the content of a React component (usually) needs to contain **one root element**. If we, for example, try to define the component <i>App</i> without the outermost <i>div</i>-element:
 
@@ -414,7 +414,7 @@ Exercises are submitted through GitHub and by marking completed exercises in the
 
 You may submit all the exercises of this course into the same repository, or use multiple repositories. If you submit exercises of different parts into the same repository, please use a sensible naming scheme for the directories.
 
-One very functional file  structure for the submission repository is as follows:
+One very functional file structure for the submission repository is as follows:
 
 ```
 part0
